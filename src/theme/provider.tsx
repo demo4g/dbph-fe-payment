@@ -12,8 +12,8 @@ export default function MaintineThemeProvider({ children }: IMaintineThemeProvid
     <MantineProvider
       theme={mantineTheme}
       classNamesPrefix="nvt"
-      cssVariablesSelector="#content"
-      withCssVariables
+      // cssVariablesSelector="#content"
+      // withCssVariables
     >
       <ModalsProvider modalProps={{ size: 440 }} labels={{ confirm: 'Xác nhận', cancel: 'Hủy' }}>
         <DatesProvider settings={{ locale: 'vi-VN' }}>{children}</DatesProvider>
